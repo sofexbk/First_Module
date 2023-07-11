@@ -19,6 +19,8 @@
             <tree string="Travel" >
                 <field name="name"/>
                 <field name="descreption"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
             </tree>
         </field>
     </record>
@@ -32,6 +34,8 @@
                     <group>
                         <field name="name"/>
                         <field name="descreption"/>
+                        <field name="date_start"/>
+                        <field name="date_end"/>
                     </group>
                 </sheet>
             </form>
