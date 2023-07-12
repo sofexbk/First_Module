@@ -68,11 +68,24 @@
         <field name="res_model">travel.travel</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="help" type="html">
-          <p class="o_view_nocontent_smiling_face">
+          <p class="o_view_content_smiling_face">
             Add a new Travel
           </p>
         </field>
     </record>
+
+    <record id="travel_travel_city_continent_action" model="ir.actions.act_window">
+        <field name="name">Continent</field>
+        <field name="res_model">continent.continent</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="help" type="html">
+          <p class="o_view_content_smiling_face">
+            Add a new Travel
+          </p>
+        </field>
+    </record>
+
+
 
     <!--Travel Menu-->
     <menuitem
@@ -81,6 +94,32 @@
         action="travel_travel_action"
         sequence="160"/>
 
+   <menuitem
+        id="sub_menu_menu_travel_travel_city"
+        name="Cities"
+        action="travel_travel_action"
+        parent="menu_travel_travel"
+        sequence="160"/>
 
+    <menuitem
+        id="sub_menu_menu_travel_travel_city_continent"
+        name="By continent"
+        action="travel_travel_city_continent_action"
+        parent="sub_menu_menu_travel_travel_city"
+        sequence="160"/>
+
+   <menuitem
+        id="sub_menu_menu_travel_travel_price"
+        name="Prices"
+        action="travel_travel_action"
+        parent="menu_travel_travel"
+        sequence="160"/>
+
+       <menuitem
+        id="sub_menu_menu_travel_travel_guide"
+        name="Guides"
+        action="travel_travel_action"
+        parent="menu_travel_travel"
+        sequence="160"/>
 </odoo>
 

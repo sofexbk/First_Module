@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_travel_travel,access_travel_travel,model_travel_travel,base.group_user,1,1,1,1
+access_travel,access_travel_travel,model_travel_travel,base.group_user,1,1,1,1
+access_continent,access_continent_continent,model_continent_continent,base.group_user,1,1,1,1
+
